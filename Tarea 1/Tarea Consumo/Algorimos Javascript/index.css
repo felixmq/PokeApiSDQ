@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-image: url(/foto/211101-F-NU281-1014-rev.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+h3{
+    text-align: center;
+    color: red;
+}
+
+.container1{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1{
+    width: 450px;
+    margin: 0 auto;
+    
+}
+

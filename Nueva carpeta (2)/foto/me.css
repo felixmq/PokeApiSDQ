@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(250, 250, 250), rgb(132, 46, 46));
+}
+
+
+div {
+    display: inline;
+}
+
+.logo img{
+    /* display: block; */
+    width: 90px;
+    height: 60px;
+    display: inline-block;
+}
+
+.uno {
+    background-color: rgb(250, 250, 250);
+    
+}
+
+.uno li{
+    display: inline;
+    margin: 15px;
+    padding: 10px;
+    float: right;
+    font-size: 25px;
+    font-weight: 20px;
+    
+    
+}
+
+.nike img {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    
+}
+.nike img:hover {
+    transform: scale(1.20);
+}
+
+section {
+    margin-top: 150px;
+}
+
+section h2 {
+    font-size:  50px;
+    text-align: center;
+}
+
+section p {
+    font-size: 20px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.two {
+    text-align: center;
+}
+
+.two li {
+    display: inline-block;
+    margin: 10px 25px;
+    background: rgb(255, 255, 0);
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 35px;
+    
+
+}
+
+.two li a{
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 601px){
+    #imgg {
+        display: none;
+    }
+
+    .burger1{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .uno {
+        
+        display: none;
+    }
+
+#imgg {
+    width: 90px;
+    
+}
+
+.burger1 {
+    display: none;
+}
+
+
+ #burger1 > li {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 15px;
+    
+    
+    
+ }
+
+ .active {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 15px;
+ }
+
+ .active > li {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration:  none;
+    
+    
+ }
+
+
+ #burger1 > li a {
+    text-decoration: none;
+    color: brown;
+ }
+
+ section {
+    padding: 0;
+ }
+
+ 
+
+
+    .nike img {
+        width: 300px;
+        position: relative;
+        display: block;
+        margin: 10px auto;
+        cursor: pointer;
+        
+    }
+}
