@@ -1,55 +1,20 @@
-// const imgs = document.getElementById('imgs')
-// const leftBtn = document.getElementById('left')
-// const rightBtn = document.getElementById('right')
+// const url = "https://jsonplaceholder.typicode.com/users"
 
-// const img = document.querySelectorAll('#imgs img')
+// async function getUsers(){
+//     try{ 
+//         const response = await fetch(url)
+//         const datos1 = await response.json();
 
-// let idx = 0
+//         datos1.forEach(datos1=> console.log(datos1.email))
 
-// // let interval = setInterval(run, 2000)
+//     }catch(error){
 
-// // function run() {
-// //     idx++
-// //     changeImage()
-// // }
-
-
-// function changeImage() {
-//     if(idx > img.length - 1) {
-//         idx = 0
-//     } else if(idx < 0) {
-//         idx = img.length - 1
-        
 //     }
-    
-//     console.log(imgs.style.transform = `translateX(${-idx * 500}px)`)
-    
 // }
 
-// // function resetInterval() {
-// //     clearInterval(interval)b 
-// //     interval = setInterval(run, 2000)
-// // }
-
-// rightBtn.addEventListener('click', () => {
-//     idx++
-//     changeImage()
-//     // resetInterval()
-// })
-
-// leftBtn.addEventListener('click', () => {
-//     idx--
-//     changeImage()
-//     // resetInterval()
-// })
+// getUsers()
 
 
 
-const array = [ "hola", "dagger", "Carro", "rojo", ["gato", "perro", "conejo", "raton", ["gallina", {nombre: "Leche", Apellido: "RD"}]]]
-
-
-console.log(array[4][4][1]["nombre"])
-
-
-const obj = {nombre: "dagger", ID: 440, hijos: ["niña", "niño", {nombrePerro: "bobi", edad: 50}]};
-console.log()
+const pokeUrl = ('https://pokeapi.co/api/v2/pokemon/150')
+fetch(pokeUrl).then(resp => resp.json()).then(pokeDatos => pokeDatos.forEach(pokeDatos.name))
